@@ -1,2 +1,2 @@
-## This is a markdown flie
+## This is a markdown file
 * MarkDown files are quite interesting
