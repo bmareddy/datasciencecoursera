@@ -36,6 +36,7 @@ rankall <- function(outcome, num = "best") {
 
     ## sort the data frame on outcome and then on hospital while excluding NA values
     sortedData <- filteredData[with(filteredData, order(outcome, hospital, na.last = NA)),] # Sort the data
+    n <- num
     if(num == "best") n <- 1
     if(num == "worst") n <- nrow(sortedData)
     n <- as.numeric(n)
